@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clique no Quadrado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container-fluid text-center mt-5">
+    <h1 class="mb-4">Clique no Quadrado!</h1>
+    <p id="pontuacao" class="fs-4 fw-bold">Pontuação: 0</p>
+    <p id="tempo" class="fs-4 fw-bold">Tempo restante: 30s</p>
+    <button id="botaoIniciar" class="btn btn-primary btn-lg mb-3">Iniciar Jogo</button>
+    <div id="areaJogo" class="position-relative mx-auto border border-dark bg-white d-none" style="width: 400px; height: 400px;">
+      <div id="quadrado" class="position-absolute bg-danger" style="width: 50px; height: 50px; cursor: pointer;"></div>
+    </div>
+    <div id="mensagemFinal" class="alert alert-info mt-3 d-none" role="alert"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
